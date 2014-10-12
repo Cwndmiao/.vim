@@ -10,7 +10,7 @@ source ~/.vim/bundles.vim
 if has('win32') || has('win64')
   " Windows
   source $VIMRUNTIME/mswin.vim
-  set guifont=Consolas:h10:cANSI
+  set guifont=Consolas:h12:cANSI
   set guioptions-=T " Toolbar
   set guioptions-=m " Menubar
 
@@ -22,13 +22,16 @@ if has('win32') || has('win64')
   cd ~
 elseif has('gui_running')
   if has("gui_macvim")
-    set guifont=Monaco:h12
+    "set guifont=Monaco:h12
+    set guifont=Source\ Code\ Pro\ for\ Powerline:h12
     " e: tab page, g: gray menu, m: menu bar, t: tearoff menu items
     set guioptions=egmt
     " commands like yy will directly put content into mac clipboard
     set clipboard=unnamed
   endif
   winsize 90 45
+else
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 endif
 
 " ----------------------------------------
@@ -275,7 +278,7 @@ let g:indentLine_color_term = 239
 "  vim-airline
 " ----------------------------------------
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts=0
+let g:airline_powerline_fonts=1
 
 
 " ----------------------------------------
