@@ -45,6 +45,7 @@ colorscheme inkpot
 " File encodings
 " ---------------
 set fileencodings=utf-8,gbk "ucs-bom,ucs-4
+set encoding=utf-8
 
 " ---------------
 " Backups
@@ -164,6 +165,7 @@ nnoremap k gk
 " Switch on spell
 nmap <silent> <Leader>s :setlocal spell!<CR>
 nmap <silent> <Leader>v :e ~/.vimrc<CR>
+nmap <silent> <Leader>b :e ~/.vim/bundles.vim<CR>
 set pastetoggle=<Leader>p
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
@@ -273,6 +275,7 @@ let g:indentLine_color_term = 239
 "  vim-airline
 " ----------------------------------------
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts=0
 
 
 " ----------------------------------------
@@ -296,7 +299,14 @@ let g:Tlist_Exit_OnlyWindow=1
 let g:Tlist_Inc_Winwidth=1
 
 " ---------------
-" SuperTab
+"  Vundle
+" ---------------
+nnoremap <Leader>bi :BundleInstall<CR>
+nnoremap <Leader>bu :BundleUpdate<CR>
+nnoremap <Leader>bc :BundleClean<CR>
+
+" ---------------
+"  SuperTab
 " ---------------
 " Set these up for cross-buffer completion (something Neocachecompl has a hard
 " time with)

@@ -21,6 +21,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/unite-session'
 " Auto Complete
 Plugin 'vim-scripts/cmdline-completion'
 Plugin 'Shougo/neocomplete.vim'
@@ -35,11 +37,13 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
 " Library
 Plugin 'L9'
-" Snipmate
+" Neosnippet like Snipmate
 Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/neosnippet-snippets'
 " Misc
 Plugin 'junegunn/goyo.vim'
+Plugin 'Shougo/vimshell.vim'
+Plugin 'Shougo/vimproc.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
