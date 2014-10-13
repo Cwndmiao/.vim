@@ -156,7 +156,7 @@ map <F3> :tabnext<CR>
 map <F4> :tabprevious<CR>
 map <F5> :make<CR>
 map <F6> :copen<CR>
-map <F7> :cprevious<CR>
+map <F7> :SyntasticCheck<CR>
 map <F8> :cnext<CR>
 
 " Jump to the exact location of the mark
@@ -300,6 +300,14 @@ let g:Tlist_Show_One_File=1
 let g:Tlist_Use_Right_Window=1
 let g:Tlist_Exit_OnlyWindow=1
 let g:Tlist_Inc_Winwidth=1
+
+" ---------------
+" Syntastic
+" ---------------
+
+let g:syntastic_mode_map={ 'mode': 'passive',
+                         \ 'active_filetypes': ['ruby', 'python'],
+                         \ 'passive_filetypes': ['c'] }
 
 " ---------------
 "  Vundle
