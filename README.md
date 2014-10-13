@@ -1,11 +1,11 @@
-#Pre-requirements#
+##Pre-requirements##
 
 * git
 * Vim 7.3 or Vim 7.4, compiled with lua-interpreter
 support(`--enable-luainterp=yes`, `:echo has("lua")` should be 1)
 * [Vundle](https://github.com/gmarik/Vundle.vim)
 
-#How to Install#
+##How to Install##
 
 Clone .vim repository
 
@@ -25,11 +25,11 @@ Install other plugins
 
   `:BundleInstall!`
 
-#Recommended terminal and vim colorscheme#
+##Recommended terminal and vim colorscheme##
 
 * [tomorrow-theme](https://github.com/ChrisKempson/Tomorrow-Theme)
 * [Solarized Dark](http://ethanschoonover.com/solarized)
 
-#Recommended patched fonts for vim-airline plugin#
+##Recommended patched fonts for vim-airline plugin##
 
 * [powerline fonts](https://github.com/Lokaltog/powerline-fonts)
